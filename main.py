@@ -1,10 +1,14 @@
 #Developed by - "Priyanshul Sharma "
 # priyanshul.is-a.dev
+
 import mysql.connector as pymysql
 from datetime import datetime
 passwrd = None
 db = None  
+
 C = None
+
+
 def base_check():
     check = 0
     db = pymysql.connect(host="localhost", user="root", password=passwrd)
@@ -12,6 +16,7 @@ def base_check():
     cursor.execute('SHOW DATABASES')
     result = cursor.fetchall()
     for r in result:
+
         for i in r:
             if i == 'dealership':
                 cursor.execute('USE dealership')
