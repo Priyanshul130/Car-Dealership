@@ -94,6 +94,7 @@ def QR():
     result = C.fetchall()
     for r in result:
         print(r)
+        
 
 def add_car():
     car_id = int(input("Enter Car ID: "))
