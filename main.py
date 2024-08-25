@@ -1,6 +1,5 @@
 #Developed by - "Priyanshul Sharma "
 # priyanshul.is-a.dev
-
 import mysql.connector as pymysql
 from datetime import datetime
 passwrd = None
