@@ -4,9 +4,7 @@ import mysql.connector as pymysql
 from datetime import datetime
 passwrd = None
 db = None  
-
 C = None
-
 
 def base_check():
     check = 0
